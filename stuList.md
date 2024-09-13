@@ -1,4 +1,4 @@
-'''c
+```c
 #define MAX_SIZE 100  // 最大学生数量
 
 // 学生结构体
@@ -18,4 +18,4 @@ typedef struct {
 void initList(StudentList *list) {
     list->size = 0;
 }
-'''
+```
