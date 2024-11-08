@@ -133,7 +133,7 @@ Result_Status ListPrint_L(Linklist L) {
         printf(" Name:");
         i = 0;
         while (p->data.Name[i]) {
-            printf(" %c", p->data.Name[i]);
+            printf("%c", p->data.Name[i]);
             i++;
         }
 
@@ -150,7 +150,7 @@ Result_Status ListPrint_L(Linklist L) {
 int main() {
     
     Linklist L;
-    Stu s1 = { "1001", "zhangsan", 85 };
+    Stu s1 = { "1001", "zhansan", 85 };
     Stu s2 = { "1002", "lisi", 90 };
     Stu s3 = { "1003", "wangwu", 78 };
     
