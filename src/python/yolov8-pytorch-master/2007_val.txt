@@ -1,0 +1,48 @@
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple10.jpg 52,43,275,278,0 319,44,563,270,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple20.jpg 1,49,311,439,0 192,159,617,594,0 360,36,744,396,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple23.jpg 187,70,572,409,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple39.jpg 2400,894,6018,4353,0 5824,923,7153,3670,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_21.jpg 97,127,346,379,0 314,112,594,385,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_44.jpg 21,27,319,315,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_46.jpg 515,257,748,524,0 339,345,578,569,0 10,239,214,471,0 193,191,423,406,0 442,176,635,327,0 301,22,533,216,0 535,55,700,220,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_48.jpg 133,173,556,595,0 401,115,725,441,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_52.jpg 129,72,271,217,0 219,195,341,316,0 182,311,334,435,0 1,181,167,338,0 309,101,408,191,0 377,248,451,323,0 402,77,463,138,0 395,152,460,219,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_74.jpg 125,196,295,374,0 197,144,363,328,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_84.jpg 64,84,484,457,0 550,44,850,356,0 197,1,559,273,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_91.jpg 227,62,723,500,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/apple_93.jpg 143,40,415,346,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/banana21.jpg 1086,10,2770,2226,1 2554,134,4158,2274,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/banana37.jpg 341,82,603,425,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/banana8.jpg 16,47,584,460,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/banana_39.jpg 33,213,459,427,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/banana_47.jpg 3,61,342,263,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/banana_69.jpg 97,83,533,320,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/banana_85.jpg 419,297,2602,1034,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/banana_94.jpg 1,4,348,309,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/cherry16.jpg 319,317,567,496,2
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/cherry18.jpg 202,233,334,362,2 326,243,481,350,2
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/cherry2.jpg 139,205,389,517,2 296,326,656,581,2 645,129,932,362,2
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/cherry32.jpg 70,240,407,595,2 424,256,766,637,2
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/cherry9.jpg 44,279,254,495,2 279,296,482,480,2
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/mixed_3.jpg 467,341,777,657,3 10,204,616,421,1 16,262,666,517,1 64,39,326,332,0
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/mixed_9.jpg 222,61,400,239,3 29,75,197,218,0 88,292,400,416,1
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange12.jpg 8,163,214,306,3 232,47,524,290,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange2.jpg 59,117,277,313,3 295,24,509,210,3 354,169,588,374,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange3.jpg 21,201,456,793,3 286,268,799,756,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange30.jpg 26,45,564,474,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange32.jpg 136,280,783,822,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange37.jpg 1,77,398,471,3 5,397,487,737,3 377,142,804,556,3 596,447,961,727,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange8.jpg 156,104,672,519,3 113,378,596,711,3 410,459,941,736,3 464,118,792,516,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange_11.jpg 1,171,532,676,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange_2.jpg 87,137,325,415,3 347,127,603,398,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange_36.jpg 706,257,1440,978,3 172,181,860,843,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange_46.jpg 62,77,245,267,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange_47.jpg 59,72,287,305,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange_74.jpg 14,8,278,280,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange_94.jpg 111,51,372,277,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/orange_95.jpg 146,361,1112,1254,3
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/pitaya18.jpg 23,202,372,512,4 79,55,560,348,4 346,237,610,501,4
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/pitaya24.jpg 73,126,470,436,4 157,394,561,738,4 369,135,800,621,4
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/pitaya32.jpg 85,61,388,382,4 351,9,640,383,4
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/pitaya7.jpg 48,45,466,333,4
+D:\计算机视觉实验\yolov8-pytorch-master\VOCdevkit/VOC2007/JPEGImages/strawberry9.jpg 538,1457,1603,2593,5 1086,428,2094,1493,5
