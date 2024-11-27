@@ -1,2 +1,2 @@
 This is my note
-https://xk3d1.no-mad-world.club/link/yy1rn0q1GrvELhXx?clash=3&extend=1
+https://rgergergergerg6555.saojc.xyz/api/v1/client/subscribe?token=2c853c323cb4881d3960d12a902fa8b1
