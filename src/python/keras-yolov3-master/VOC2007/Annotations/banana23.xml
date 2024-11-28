@@ -1,0 +1,26 @@
+<annotation>
+	<folder>banana</folder>
+	<filename>banana (23).jpg</filename>
+	<path>D:\images\fruit_detection\JPEGImages\banana\banana (23).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2556</width>
+		<height>1917</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>banana</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>312</xmin>
+			<ymin>144</ymin>
+			<xmax>2399</xmax>
+			<ymax>1511</ymax>
+		</bndbox>
+	</object>
+</annotation>

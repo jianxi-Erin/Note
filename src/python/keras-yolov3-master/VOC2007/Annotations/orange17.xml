@@ -1,0 +1,38 @@
+<annotation>
+	<folder>orange</folder>
+	<filename>orange (17).jpg</filename>
+	<path>D:\images\fruit_detection\JPEGImages\orange\orange (17).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orange</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>169</xmin>
+			<ymin>60</ymin>
+			<xmax>645</xmax>
+			<ymax>516</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>orange</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>447</xmin>
+			<ymin>271</ymin>
+			<xmax>839</xmax>
+			<ymax>592</ymax>
+		</bndbox>
+	</object>
+</annotation>

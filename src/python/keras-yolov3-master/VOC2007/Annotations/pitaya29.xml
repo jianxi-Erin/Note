@@ -1,0 +1,38 @@
+<annotation>
+	<folder>pitaya</folder>
+	<filename>pitaya (29).jpg</filename>
+	<path>D:\images\fruit_detection\JPEGImages\pitaya\pitaya (29).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>469</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pitaya</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>54</xmin>
+			<ymin>71</ymin>
+			<xmax>323</xmax>
+			<ymax>431</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pitaya</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>308</xmin>
+			<ymin>154</ymin>
+			<xmax>572</xmax>
+			<ymax>460</ymax>
+		</bndbox>
+	</object>
+</annotation>
