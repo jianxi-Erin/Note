@@ -1,0 +1,38 @@
+<annotation>
+	<folder>cherry</folder>
+	<filename>cherry (5).jpg</filename>
+	<path>D:\images\fruit_detection\JPEGImages\cherry\cherry (5).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1080</width>
+		<height>608</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cherry</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>481</xmin>
+			<ymin>262</ymin>
+			<xmax>780</xmax>
+			<ymax>500</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>cherry</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>770</xmin>
+			<ymin>234</ymin>
+			<xmax>994</xmax>
+			<ymax>478</ymax>
+		</bndbox>
+	</object>
+</annotation>
