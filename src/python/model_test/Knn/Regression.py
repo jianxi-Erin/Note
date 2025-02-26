@@ -5,6 +5,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
+
+
 # 加载糖尿病数据集
 diabetes = load_diabetes()
 X = diabetes.data  # 特征
