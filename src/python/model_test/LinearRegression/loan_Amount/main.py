@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
-
+from sklearn.preprocessing import StandardScaler
 
 # %%
 # 1. 读取数据
@@ -27,12 +27,12 @@ y = data["Loan Amount"].values
 
 # %%
 # 3. 划分训练集和测试集
-#  数据归一化（标准化）
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
-
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
+#  分别对训练集测试集 进行数据归一化（标准化）
+# # 创建 StandardScaler 对象
+# scaler = StandardScaler()
+# X_train = scaler.fit_transform(X_train)
+# X_test = scaler.transform(X_test)
 
 # %%
 # 4. 创建线性回归模型
