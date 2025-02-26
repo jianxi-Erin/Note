@@ -1,38 +1,45 @@
 import numpy as np
-from sklearn.datasets import load_diabetes
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsRegressor
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import mean_squared_error,r2_score
 
+# 加载加利福尼亚房价数据集
+california = fetch_california_housing()
+X = california.data  # 特征数据
+y = california.target  # 目标变量（房价）
 
-
-# 加载糖尿病数据集
-diabetes = load_diabetes()
-X = diabetes.data  # 特征
-y = diabetes.target  # 目标值
+# 查看数据集信息
+print("特征数据形状:", X.shape)
+print("目标变量形状:", y.shape)
+print("特征名称:", california.feature_names)
+print("数据集描述:\n", california.DESCR)
 
 # 将数据集分为训练集和测试集
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# 标准化特征
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
-
-# 创建KNN回归器，设置K=5
-knn_reg = KNeighborsRegressor(n_neighbors=5)
+# 初始化KNN回归模型
+knn_regressor = KNeighborsRegressor(n_neighbors=5)  # 使用5个邻居
 
 # 训练模型
-knn_reg.fit(X_train, y_train)
+knn_regressor.fit(X_train, y_train)
 
-# 使用测试集进行预测
-y_pred = knn_reg.predict(X_test)
+# 预测测试集
+y_pred = knn_regressor.predict(X_test)
 
-# 计算均方误差（MSE）
+# 评估模型性能
 mse = mean_squared_error(y_test, y_pred)
-print(f"均方误差 (MSE): {mse:.2f}")
-
-# 计算决定系数（R²）
 r2 = r2_score(y_test, y_pred)
-print(f"决定系数 (R²): {r2:.2f}")
+print("均方误差 (MSE):", mse)
+print("R^2 分数:", r2)
+
+# 可视化预测结果 vs 真实值
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred, alpha=0.5)
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red', linestyle='--')  # 绘制对角线
+plt.xlabel("真实值")
+plt.ylabel("预测值")
+plt.title("KNN回归预测结果 vs 真实值")
+plt.show()

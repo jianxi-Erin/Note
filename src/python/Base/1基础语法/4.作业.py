@@ -1,0 +1,7 @@
+a=()
+name=input("请输入姓名")
+te=input("请输入电话")
+address=input("请输入地址")
+you=input("请输入邮箱")
+a=("姓名",name,"电话",te,"地址",address,"邮箱",you)
+print(a)
