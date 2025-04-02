@@ -1,4 +1,4 @@
-# 使用knn算法解决鸢尾花分类问题
+# 使用knn近邻模型预测鸢尾花分类问题
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -32,3 +32,4 @@ y_pred = knn.predict(X_test)
 # 计算准确率
 report = classification_report(y_test, y_pred)
 print(f"分类报告: {report}")
+print("混淆矩阵\n",confusion_matrix(y_test, y_pred))

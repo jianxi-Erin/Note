@@ -1,3 +1,4 @@
+# 使用KNN模型预测加州房价回归问题
 # 导入必要库
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,7 +9,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 或 ['Microsoft YaHei']
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
-# 加载数据
+# 加载加州房价数据集
 housing = fetch_california_housing()
 X = housing.data  # 特征
 y = housing.target  # 目标值（房价中位数的对数变换值）
@@ -39,30 +40,38 @@ y_pred = knn_reg.predict(X_test)
 # 评估模型
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
+print("=== KNN回归模型评估 ===")
 print(f"均方误差（MSE）：{mse:.2f}")
 print(f"R²分数：{r2:.2f}")
 
-from sklearn.model_selection import GridSearchCV
 
-# 参数网格
-param_grid = {'n_neighbors': range(1, 20)}
+# 随机网格调优
+from sklearn.model_selection import RandomizedSearchCV
+from scipy.stats import randint, uniform
 
+# 定义参数分布空间
+param_dist = {
+    'n_neighbors': randint(1, 50),       # 整数均匀分布[1,50)
+    'weights': ['uniform', 'distance'],   # 分类选项
+    'metric': ['euclidean', 'manhattan', 'minkowski'],
+    'p': uniform(1, 3)                   # 连续均匀分布[1,4)
+}
 
-# 可视化预测结果 vs 真实值
-plt.figure(figsize=(8, 6))
-plt.scatter(y_test, y_pred, alpha=0.5)
-plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)  # 绘制对角线
-plt.xlabel("真实值")
-plt.ylabel("预测值")
-plt.title("KNN回归：真实值 vs 预测值")
-plt.show()
+random_search = RandomizedSearchCV(
+    KNeighborsRegressor(),
+    param_distributions=param_dist,
+    n_iter=100,           # 随机采样100组参数
+    cv=5,                 # 5折交叉验证
+    scoring='neg_mean_squared_error',
+    n_jobs=-1,            # 使用所有CPU核心
+    random_state=42       # 随机种子保证可复现
+)
 
-# 残差分析
-residuals = y_test - y_pred
-plt.figure(figsize=(8, 6))
-plt.scatter(y_pred, residuals, alpha=0.5)
-plt.axhline(y=0, color='r', linestyle='--', lw=2)  # 绘制水平线
-plt.xlabel("预测值")
-plt.ylabel("残差")
-plt.title("残差分析")
-plt.show()
+random_search.fit(X_train, y_train)
+y_pred=random_search.predict(X_test)
+# 评估模型
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+print(f"随机搜索模型评估")
+print(f"均方误差（MSE）：{mse:.2f}")
+print(f"R²分数：{r2:.2f}")
