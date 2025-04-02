@@ -8,7 +8,7 @@ import matplotlib
 import seaborn as sns
 matplotlib.rcParams['font.sans-serif'] = ['SimHei']  # 或 ['Microsoft YaHei']
 matplotlib.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
-# 加载数据
+# 加载数据集
 housing = fetch_california_housing()
 X = housing.data
 y = housing.target
@@ -42,3 +42,4 @@ plt.xlabel('实际值')
 plt.ylabel('预测值')
 plt.title('实际值 vs 预测值')
 plt.show()
+
